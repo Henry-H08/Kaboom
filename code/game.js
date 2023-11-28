@@ -8,7 +8,7 @@ const apple = add([
 onClick(apple, () => {
   add([
     pos(80, 120),
-    rect(20, 40),
+    rect(200, 200),
     outline(4),
     area(),
     color(BLACK),
