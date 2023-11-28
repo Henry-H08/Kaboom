@@ -1,17 +1,19 @@
-scene('game', () => {
-  const apple = add([
-    sprite('apple'),
-    pos(SCALE*3, SCALE*3),
-    scale((SCALE/64) * 3), // SCALE divided by sprite width, multiplied by the size change
-    rotate(0),
-    anchor('center'),
+loadSprite("apple", "sprites/apple.png")
+const apple = add([
+	sprite("apple"),   
+	pos(120, 80),           
+	anchor("center"), 
+  area(),
+])
 
-  ]);
+onHover(apple, () => {
+  add([
+    pos(80, 120),
+    rect(20, 40),
+    outline(4),
+    area(),
+  ])
+})
 
-  onUpdate(() => {
-    apple.angle += dt()*150;
-    apple.pos = mousePos();
-  });
-});
 
 go('game');
