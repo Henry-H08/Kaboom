@@ -5,7 +5,7 @@ const apple = add([
   	area(),
 ])
 
-onHover(apple, () => {
+onClick(apple, () => {
   add([
     pos(80, 120),
     rect(20, 40),
