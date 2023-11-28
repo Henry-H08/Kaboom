@@ -16,4 +16,4 @@ onHover(apple, () => {
 })
 
 
-go('game');
+
