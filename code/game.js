@@ -11,6 +11,7 @@ onHover(apple, () => {
     rect(20, 40),
     outline(4),
     area(),
+    color(BLACK),
   ])
 })
 
