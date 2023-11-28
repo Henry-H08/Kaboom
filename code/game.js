@@ -7,10 +7,11 @@ const apple = add([
 
 onClick(apple, () => {
   add([
-    pos(80, 120),
+    pos(120, 80),
     rect(200, 200),
     outline(4),
     area(),
+    anchor("center"),
     color(BLACK),
   ])
 })
