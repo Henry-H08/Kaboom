@@ -22,7 +22,7 @@ apple.onClick(() => {
 
 add([
 	sprite("bg"),
-	pos(width()/2, height()/2),
+	pos(100, 100),
 	anchor(center),
     ])
 
