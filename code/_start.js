@@ -25,4 +25,5 @@ const SCALE = width()/16;
 
 loadRoot('sprites/');
 
+loadSprite("bg", 'bg.jpg');
 ls('apple');
