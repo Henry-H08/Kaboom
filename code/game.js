@@ -23,7 +23,6 @@ apple.onClick(() => {
 add([
 	pos(width/2, height/2),
 	anchor(center),
-	scale(100%),
     ])
 
 
