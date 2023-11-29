@@ -7,7 +7,7 @@ const apple = add([
 
 var rah = 0;
 
-onClick(apple, () => {
+apple.onClick(() => {
   add([
     pos(120, 80),
     rect(200, 200),
@@ -15,9 +15,9 @@ onClick(apple, () => {
     area(),
     anchor("center"),
     color(BLACK),
-	rah = 1,
-	  debug.log(rah),
   ])
+	rah = 1,
+	debug.log(rah),
 })
 
 
