@@ -16,8 +16,8 @@ apple.onClick(() => {
     anchor("center"),
     color(BLACK),
   ])
-	rah = 1,
-	debug.log(rah),
+	rah = 1;
+	debug.log(rah);
 })
 
 
