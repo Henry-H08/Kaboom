@@ -20,5 +20,11 @@ apple.onClick(() => {
 	debug.log(rah);
 })
 
+add([
+	sprite("bg"),
+	pos(width()/2, height()/2),
+	anchor(center),
+    ])
+
 
 
