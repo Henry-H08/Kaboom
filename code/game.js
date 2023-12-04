@@ -27,6 +27,22 @@ const bg = add([
 	anchor("center"), // anchor() component defines the pivot point (defaults to "topleft")
 ])
 
+let background = add([
+    sprite("bg"),
+    // Make the background centered on the screen
+    pos(width() / 2, height() / 2),
+    origin("center"),
+    // Allow the background to be scaled
+    scale(1),
+    // Keep the background position fixed even when the camera moves
+    fixed()
+  ]);
+  // Scale the background to cover the screen
+  background.scaleTo(Math.max(
+    width() / bgImage.tex.width,
+    height() / bgImage.tex.height
+  ));
+}
 
 
 
