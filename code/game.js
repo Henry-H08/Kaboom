@@ -27,9 +27,4 @@ const bg = add([
   	area(),
 	z(Z.bg),
     	scale(SCALE/120),
-
 ])
-
-
- 
-
