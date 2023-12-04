@@ -20,25 +20,16 @@ apple.onClick(() => {
 	debug.log(rah);
 })
 
+const bg = add([
+	sprite("bg"),   
+	pos(0, 0),           
+	anchor("center"), 
+  	area(),
+	z(Z.bg),
+    	scale(SCALE/120),
+
+])
 
 
-let background = add([
-    sprite("bg"),
-    // Make the background centered on the screen
-    pos(width() / 2, height() / 2),
-    anchor("center"),
-    // Allow the background to be scaled
-    scale(5),
-    // Keep the background position fixed even when the camera moves
-    fixed()
-  ]);
-  // Scale the background to cover the screen
-  background.scaleTo(Math.max(
-    width() / bgImage.tex.width,
-    height() / bgImage.tex.height
-  ));
-
-
-
-
+ 
 
