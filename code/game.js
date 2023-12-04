@@ -25,6 +25,5 @@ const bg = add([
 	pos(0, 0),           
 	anchor("center"), 
   	area(),
-	z(Z.bg),
     	scale(SCALE/120),
 ])
