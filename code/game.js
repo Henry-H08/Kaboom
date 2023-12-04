@@ -37,7 +37,7 @@ let background = add([
     width() / bgImage.tex.width,
     height() / bgImage.tex.height
   ));
-}
+
 
 
 
