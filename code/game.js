@@ -26,7 +26,7 @@ let background = add([
     sprite("bg"),
     // Make the background centered on the screen
     pos(width() / 2, height() / 2),
-    origin("center"),
+    anchor("center"),
     // Allow the background to be scaled
     scale(5),
     // Keep the background position fixed even when the camera moves
