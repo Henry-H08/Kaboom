@@ -16,7 +16,7 @@ add([
 
 const apple = add([
 	sprite("apple"),   
-	pos(width()/2.5, 80),           
+	pos(width()/2.3, 80),           
 	anchor("center"), 
   	area(),
 ])
