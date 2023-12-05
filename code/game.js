@@ -22,7 +22,7 @@ apple.onClick(() => {
         size: 48, // 48 pixels tall
         width: 320, // it'll wrap to next line when width exceeds this value
         font: "sans-serif", // specify any font you loaded or browser built-in
-	
+	color(WHITE),
     })	
 })
 
