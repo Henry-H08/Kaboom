@@ -15,10 +15,14 @@ add([
 ])
 
 const apple = add([
-	sprite("apple"),   
+	sprite("apple", {
+		width: 30,
+		height: 30,
+	}),   
 	pos(width()/2.3, height()-200),           
 	anchor("center"), 
   	area(),
+	
 ])
 
 apple.onClick(() => {
