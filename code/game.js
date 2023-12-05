@@ -9,8 +9,8 @@ var rah = 0;
 
 apple.onClick(() => {
   add([
+    rect(width(), (height()/3.5),
     pos(width()/2, height()),
-    rect(height()/3.5, width()),
     outline(4),
     area(),
     anchor("center"),
