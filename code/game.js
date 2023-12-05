@@ -1,19 +1,3 @@
-
-
-
-
-
-
-
-add([
-    sprite("bg", {
-         width: width(),
-         height: height()
-    }),
-    fixed(),
-    pos(0, 0)
-])
-
 const apple = add([
 	sprite("apple", {
 		width: 150,
@@ -37,3 +21,19 @@ apple.onClick(() => {
   ])
 	
 })
+
+
+
+
+
+
+
+add([
+    sprite("bg", {
+         width: width(),
+         height: height()
+    }),
+    fixed(),
+    pos(0, 0)
+])
+
