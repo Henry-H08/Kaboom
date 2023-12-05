@@ -6,7 +6,6 @@ const apple = add([
 	pos(width()/2.3, height()-200),           
 	anchor("center"), 
   	area(),
-	opacity(200),
 	
 ])
 
