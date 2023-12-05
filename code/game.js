@@ -20,10 +20,15 @@ apple.onClick(() => {
 	debug.log(rah);
 })
 
-const bg = add([
-	sprite("bg"),   
-	pos(width()/2, height()/2),           
-	anchor("center"), 
-  	area(),
-    	
+
+
+
+
+add([
+    sprite("bg", {
+         width: width(),
+         height: height()
+    }),
+    fixed(),
+    pos(0, 0)
 ])
