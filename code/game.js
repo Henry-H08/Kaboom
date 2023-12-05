@@ -23,7 +23,7 @@ const apple = add([
 
 apple.onClick(() => {
   add([
-    rect(width(), height()/2.5),
+    rect(width(), height()-20),
     pos(width()/2, height()),
     outline(4),
     area(),
