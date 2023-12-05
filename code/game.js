@@ -16,7 +16,7 @@ apple.onClick(() => {
     outline(4),
     area(),
     anchor("center"),
-    color(BLACK),
+    color(WHITE),
   ])
     
 	add([
