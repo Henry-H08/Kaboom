@@ -16,14 +16,14 @@ add([
 
 const apple = add([
 	sprite("apple"),   
-	pos(width()/2.3, height()),           
+	pos(width()/2.3, height()+60),           
 	anchor("center"), 
   	area(),
 ])
 
 apple.onClick(() => {
   add([
-    rect(width(), height()+200),
+    rect(width(), height()/2.5),
     pos(width()/2, height()),
     outline(4),
     area(),
