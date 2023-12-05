@@ -22,8 +22,8 @@ apple.onClick(() => {
 
 const bg = add([
 	sprite("bg"),   
-	pos("center"),           
+	pos(width()/2, height()/2),           
 	anchor("center"), 
   	area(),
-    	scale(SCALE/120),
+    	
 ])
