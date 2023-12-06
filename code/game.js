@@ -22,6 +22,7 @@ apple.onClick(() => {
 	add([
 		color(BLACK),
 		pos(width()/2, height()),
+		z(9999),
 		text("Its Locked...", {
 		size: 48, // 48 pixels tall
         	width: 320, // it'll wrap to next line when width exceeds this value
