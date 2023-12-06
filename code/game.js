@@ -13,7 +13,7 @@ apple.onClick(() => {
   
 	add([
 		color(BLACK),
-		pos(width()/2, height()),
+		pos(width()/2.3, height()-200),
 		z(9999),
 		text("Its Locked...", {
 		size: 48, // 48 pixels tall
