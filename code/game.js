@@ -10,15 +10,7 @@ const apple = add([
 ])
 
 apple.onClick(() => {
-  add([
-    rect(width(), height()/2.5),
-    pos(width()/2, height()),
-    outline(4),
-    area(),
-    anchor("center"),
-    color(WHITE),
-  ])
-    
+  
 	add([
 		color(BLACK),
 		pos(width()/2, height()),
@@ -30,6 +22,15 @@ apple.onClick(() => {
 	})
 		
 	])
+	add([
+    rect(width(), height()/2.5),
+    pos(width()/2, height()),
+    outline(4),
+    area(),
+    anchor("center"),
+    color(WHITE),
+  ])
+    
 })
 
 
