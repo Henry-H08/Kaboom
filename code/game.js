@@ -1,50 +1,78 @@
-const apple = add([
-	sprite("apple", {
-		width: 150,
-		height: 80,
-	}),   
-	pos(width()/2.3, height()-200),           
-	anchor("center"), 
-  	area(),
+// Input handling and basic player movement
+
+// Start kaboom
+
+
+// Load assets
+
+
+// Define player movement speed (pixels per second)
+const SPEED = 320
+
+var shot = 0
+
+// Add player game object
+const player = add([
+	sprite("apple"),
+	// center() returns the center point vec2(width() / 2, height() / 2)
+	pos(center()),
 	
+	anchor('center'),
 ])
 
-apple.onClick(() => {
-  
-	add([
-		color(BLACK),
-		pos(width()/6, height()-400),
-		z(9999),
-		text("Its Locked...", {
-		size: 48, // 48 pixels tall
-        	width: 320, // it'll wrap to next line when width exceeds this value
-        	font: "sans-serif", // specify any font you loaded or browser built-in
-	})
-		
-	])
-	add([
-    rect(width(), height()/2.5),
-    pos(width()/2, height()),
-    outline(4),
-    area(),
-    anchor("center"),
-    color(WHITE),
-  ])
-    
+// onKeyDown() registers an event that runs every frame as long as user is holding a certain key
+onKeyDown("a", () => {
+	// .move() is provided by pos() component, move by pixels per second
+	player.move(-SPEED, 0)
+})
+
+onKeyDown("d", () => {
+	player.move(SPEED, 0)
+})
+
+onKeyDown("w", () => {
+	player.move(0, -SPEED)
+})
+
+onKeyDown("s", () => {
+	player.move(0, SPEED)
 })
 
 
+function spawnBullet(p) {
+		add([
+			rect(10, 10),
+			area(),
+			pos(player.pos),
+			anchor("top"),
+			color(BLACK),
+			outline(4),
+			move(0, 1500),
+			offscreen({ destroy: true }),
+			// strings here means a tag
+			"bullet",
+		])
+	shot = 1
+	wait(2, () => {
+    shot = 0
+})
 
+	}
 
+onKeyDown("space", () => {
+	if (shot != 1) {
+		spawnBullet(player.pos.add(0, 0))
+	}
+})
 
-
-
-add([
-    sprite("bg", {
-         width: width(),
-         height: height()
-    }),
-    fixed(),
-    pos(0, 0)
-])
+player.add([
+			rect(20, 40),
+			area(),
+			pos(0,0),
+			anchor('top'),
+			
+			
+			
+		])
+	
 
