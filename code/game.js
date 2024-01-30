@@ -13,7 +13,7 @@ var shot = 0
 
 // Add player game object
 const player = add([
-	sprite("apple"),
+	sprite("dinoo"),
 	// center() returns the center point vec2(width() / 2, height() / 2)
 	pos(center()),
 	
