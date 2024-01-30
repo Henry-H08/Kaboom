@@ -27,3 +27,4 @@ loadRoot('sprites/');
 
 loadSprite("bg", 'bg.jpg');
 ls('apple');
+ls('dinoo');
