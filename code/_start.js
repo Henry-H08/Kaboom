@@ -28,10 +28,10 @@ loadRoot('sprites/');
 
 
 
-loadSprite("dinoo", "sprites/dinoo.png", {
+loadSprite("dinoo", "dinoo.png", {
 	sliceX: 3, sliceY: 3
 })
 
-loadSprite("bal", "sprites/bal.png", {
+loadSprite("bal", "bal.png", {
 	sliceX: 3, sliceY: 3
 })
