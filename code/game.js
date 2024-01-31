@@ -65,14 +65,14 @@ onKeyDown("space", () => {
 	}
 })
 
-player.add([
-			rect(20, 40),
-			area(),
-			pos(0,0),
-			anchor('top'),
+onMouseMove((pos) => {
+	player.angle = pos.angle(player.pos) - 90;
+
+	
+});
+
 			
 			
-			
-		])
+		
 	
 
