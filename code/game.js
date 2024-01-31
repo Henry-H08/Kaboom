@@ -69,7 +69,7 @@ onKeyPress("space", () => {
 })
 
 const	walls = add([
-	sprite("wall"),
+	sprite("walls"),
 	// center() returns the center point vec2(width() / 2, height() / 2)
 	pos(0,0),
 	anchor('topleft'),
