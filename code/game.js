@@ -39,31 +39,7 @@ onKeyDown("s", () => {
 })
 
 
-function spawnBullet(p) {
-		add([
-			rect(10, 10),
-			area(),
-			pos(player.pos),
-			anchor("top"),
-			color(BLACK),
-			outline(4),
-			move(0, 1500),
-			offscreen({ destroy: true }),
-			// strings here means a tag
-			"bullet",
-		])
-	shot = 1
-	wait(2, () => {
-    shot = 0
-})
 
-	}
-
-onKeyDown("space", () => {
-	if (shot != 1) {
-		spawnBullet(player.pos.add(0, 0))
-	}
-})
 
 onMouseMove((pos) => {
 	player.angle = pos.angle(player.pos) -180;
@@ -71,8 +47,24 @@ onMouseMove((pos) => {
 	
 });
 
-			
-			
+
+onKeyPress("space", () => {
+	if (shot != 1) {
+		const mb = add([
+	        sprite("apple"),
+	        pos(player.pos.x,player.pos.y),
+	        area(),
+		    move(toWorld(mousePos()).sub(player.pos),1500),
+	        offscreen({ destroy: true }),
+	        "MyBullet",
+	
+    ])
+		shot = 1
+		wait(2, () => {
+    shot = 0
+})
+	}
+})
 		
 	
 
