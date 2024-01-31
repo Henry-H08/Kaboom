@@ -16,7 +16,7 @@ const player = add([
 	sprite("dinoo"),
 	// center() returns the center point vec2(width() / 2, height() / 2)
 	pos(center()),
-	scale(SCALE/100 * 1.6),
+	scale(SCALE/70 * 1.6),
 	anchor('center'),
 ])
 
