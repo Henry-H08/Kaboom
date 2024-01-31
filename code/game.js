@@ -16,7 +16,7 @@ const player = add([
 	sprite("dinoo"),
 	// center() returns the center point vec2(width() / 2, height() / 2)
 	pos(center()),
-	scale(SCALE/70 * 1.6),
+	scale(SCALE/50 * 1.6),
 	anchor('center'),
 ])
 
@@ -55,7 +55,7 @@ onKeyPress("space", () => {
 	        pos(player.pos.x,player.pos.y),
 	        area(),
 		anchor("center"),
-		scale(SCALE/80 * 1.6),
+		scale(SCALE/70 * 1.6),
 		move(toWorld(mousePos()).sub(player.pos),1500),
 	        offscreen({ destroy: true }),
 	        "MyBullet",
@@ -67,6 +67,13 @@ onKeyPress("space", () => {
 })
 	}
 })
+
+const	walls = add([
+	sprite("wall"),
+	// center() returns the center point vec2(width() / 2, height() / 2)
+	pos(0,0),
+	anchor('topright'),
+])
 
 
 		
