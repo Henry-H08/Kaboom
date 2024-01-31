@@ -25,7 +25,13 @@ const SCALE = width()/16;
 
 loadRoot('sprites/');
 
-loadSprite("bg", 'bg.jpg');
-ls('apple');
-ls('dinoo');
-ls('bal');
+
+
+
+loadSprite("dinoo", "sprites/dinoo.png", {
+	sliceX: 3, sliceY: 3
+})
+
+loadSprite("bal", "sprites/bal.png", {
+	sliceX: 3, sliceY: 3
+})
