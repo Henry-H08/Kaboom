@@ -35,3 +35,7 @@ loadSprite("dinoo", "dinoo.png", {
 loadSprite("bal", "bal.png", {
 	
 })
+
+loadSprite("wall", "wall.png", {
+	
+})
