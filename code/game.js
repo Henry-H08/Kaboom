@@ -54,7 +54,8 @@ onKeyPress("space", () => {
 	        sprite("apple"),
 	        pos(player.pos.x,player.pos.y),
 	        area(),
-		    move(toWorld(mousePos()).sub(player.pos),1500),
+		anchor(top),
+		move(toWorld(mousePos()).sub(player.pos),1500),
 	        offscreen({ destroy: true }),
 	        "MyBullet",
 	
