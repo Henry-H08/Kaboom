@@ -36,6 +36,6 @@ loadSprite("bal", "bal.png", {
 	
 })
 
-loadSprite("wall", "wall.png", {
+loadSprite("walls", "walls.png", {
 	
 })
