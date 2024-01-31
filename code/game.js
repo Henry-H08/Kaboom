@@ -51,7 +51,7 @@ onMouseMove((pos) => {
 onKeyPress("space", () => {
 	if (shot != 1) {
 		const mb = add([
-	        sprite("ball"),
+	        sprite("bal"),
 	        pos(player.pos.x,player.pos.y),
 	        area(),
 		anchor("top"),
