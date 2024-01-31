@@ -66,7 +66,7 @@ onKeyDown("space", () => {
 })
 
 onMouseMove((pos) => {
-	player.angle = pos.angle(player.pos) ;
+	player.angle = pos.angle(player.pos) -180;
 
 	
 });
