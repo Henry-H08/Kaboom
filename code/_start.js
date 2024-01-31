@@ -33,5 +33,5 @@ loadSprite("dinoo", "dinoo.png", {
 })
 
 loadSprite("bal", "bal.png", {
-	sliceX: 3, sliceY: 3
+	
 })
