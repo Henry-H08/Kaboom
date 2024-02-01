@@ -73,6 +73,7 @@ const	walls = add([
 	// center() returns the center point vec2(width() / 2, height() / 2)
 	pos(0,0),
 	anchor('center'),
+	scale(SCALE/30 * 1.6),
 ])
 
 
