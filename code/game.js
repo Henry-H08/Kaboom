@@ -1,28 +1,18 @@
-// Input handling and basic player movement
-
-// Start kaboom
-
-
-// Load assets
-
-
-// Define player movement speed (pixels per second)
 const SPEED = 320
 
 var shot = 0
 
-// Add player game object
+
 const player = add([
 	sprite("dinoo"),
-	// center() returns the center point vec2(width() / 2, height() / 2)
 	pos(center()),
 	scale(SCALE/50 * 1.6),
 	anchor('center'),
 ])
 
-// onKeyDown() registers an event that runs every frame as long as user is holding a certain key
+
 onKeyDown("a", () => {
-	// .move() is provided by pos() component, move by pixels per second
+	
 	player.move(-SPEED, 0)
 })
 
@@ -68,13 +58,22 @@ onKeyPress("space", () => {
 	}
 })
 
-const	walls = add([
-	sprite("walls"),
-	// center() returns the center point vec2(width() / 2, height() / 2)
-	pos(0,0),
+
+const enemy = add([
+	sprite("dinoo"),
+	pos(50, 50),
+	area(),
 	anchor('center'),
-	scale(SCALE/30 * 1.6),
+	scale(SCALE/50 * 1.6),
+	body(),
+	stay(),
+	'enemy'
+	
 ])
+
+onCollide("bullet", "enemy", (b, e) => {
+    destroy(e)
+})
 
 
 		
