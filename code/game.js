@@ -48,7 +48,7 @@ onKeyPress("space", () => {
 		scale(SCALE/70 * 1.6),
 		move(toWorld(mousePos()).sub(player.pos),1500),
 	        offscreen({ destroy: true }),
-	        "MyBullet",
+	        "bullet",
 	
     ])
 		shot = 1
