@@ -79,7 +79,7 @@ const enemy = add([
 onCollide("bullet", "enemy", (b, e) => {
 	destroy(e)
 	score = score + 1;
-	scoreboard.text = score	
+	
 })
 
 
