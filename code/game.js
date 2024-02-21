@@ -2,6 +2,12 @@ const SPEED = 320
 
 var shot = 0
 
+var score = 0
+
+const scoreboard = add([
+    text("Score: " + score),
+    pos(24, 24),
+])
 
 const player = add([
 	sprite("dinoo"),
@@ -71,9 +77,11 @@ const enemy = add([
 
 onCollide("bullet", "enemy", (b, e) => {
     destroy(e)
+    scoreboard.text = score	
 })
 
 
-		
+
+
 	
 
