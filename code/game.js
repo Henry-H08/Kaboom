@@ -44,7 +44,6 @@ onKeyPress("space", () => {
 	        sprite("bal"),
 	        pos(player.pos.x,player.pos.y),
 	        area(),
-		body(),
 		anchor("center"),
 		scale(SCALE/70 * 1.6),
 		move(toWorld(mousePos()).sub(player.pos),1500),
@@ -66,7 +65,6 @@ const enemy = add([
 	area(),
 	anchor('center'),
 	scale(SCALE/50 * 1.6),
-	body(),
 	'enemy'
 	
 ])
