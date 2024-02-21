@@ -6,7 +6,8 @@ var score = 0
 
 const scoreboard = add([
     text("Score: " + score),
-    pos(24, 24),
+    pos(center()),
+    color(BLACK),
 ])
 
 const player = add([
