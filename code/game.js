@@ -67,7 +67,6 @@ const enemy = add([
 	anchor('center'),
 	scale(SCALE/50 * 1.6),
 	body(),
-	stay(),
 	'enemy'
 	
 ])
